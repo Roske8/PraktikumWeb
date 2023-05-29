@@ -1,7 +1,3 @@
-@media screen and (max-width: 1441px){
-    
-}
-
 @media screen and (max-width: 1025px){
     .row{
         justify-content: space-around !important;
@@ -14,6 +10,13 @@
     }
     .img{
         width: 40% !important;
+    }
+    #contanctCover #contacts #info h4{
+        font-size: 20px;
+    }
+    #contanctCover #contacts #info p{
+        font-size: 15px;
+        line-height: 40px;
     }
 }
 
@@ -39,6 +42,20 @@
     }
     .img{
         width: 100% !important;
+    }
+    #contanctCover{
+        height: 90vh;
+    }
+    #contanctCover #contacts #info h4{
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    #contanctCover #contacts #info p{
+        margin-bottom: 15px;
+    }
+    #contanctCover #contacts{
+        flex-direction: column;
+        text-align: center;
     }
 }
 
@@ -72,6 +89,14 @@
     }
     .cover{
         height: 320vh;
+    }
+
+    #wrap{
+        height: 30vh;
+    }
+    #footer{
+        flex-direction: column;
+        text-align: center;
     }
 }
 
