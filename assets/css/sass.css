@@ -1,0 +1,124 @@
+@font-face {
+  font-family: Roboto;
+  src: url("../font/RobotoSlab-VariableFont_wght.ttf");
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Roboto;
+  background-color: #1d1d1f;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+#nav-header {
+  background-color: #1d1d1f;
+  padding: 10px 0px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #e4e4e4;
+}
+#nav-header #header {
+  width: 80%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+}
+#nav-header #header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+#nav-header #header ul {
+  list-style-type: none;
+}
+#nav-header #header ul li {
+  color: #e4e4e4;
+  display: inline;
+  line-height: 80px;
+  font-size: 23px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+#nav-header #header ul li a {
+  text-decoration: none;
+  color: #e4e4e4;
+}
+#nav-header #header ul li a:hover {
+  color: #0077ff;
+}
+
+#home {
+  height: 85vh;
+  background-image: url("../images/cover5.jpg");
+  background-position: left;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+}
+#home #transparent {
+  width: 100%;
+  height: inherit;
+  background: rgba(0, 0, 0, 0.2);
+}
+#home #transparent #test {
+  width: 80%;
+  margin: 0px auto;
+  padding-top: 15%;
+}
+#home #transparent #test h2 {
+  color: #e4e4e4;
+  font-size: 40px;
+}
+#home #transparent #test h1 {
+  color: #e4e4e4;
+  font-size: 55px;
+}
+#home #transparent #test h1 #colors {
+  color: #0077ff;
+}
+#home #transparent #test ul {
+  margin-top: 20px;
+  list-style-type: none;
+}
+#home #transparent #test ul li {
+  margin-right: 30px;
+  display: inline;
+}
+#home #transparent #test ul li a {
+  font-size: 30px;
+  color: #0077ff;
+  text-decoration: none;
+}
+#home #transparent #test ul li a:hover {
+  color: #e4e4e4;
+}
+
+#about {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0px auto;
+  margin-top: 20px;
+}
+#about #author img {
+  width: 400px;
+  border-radius: 50%;
+}
+#about #about-text h2 {
+  color: #e4e4e4;
+  font-size: 40px;
+}
+#about #about-text h1 {
+  color: #e4e4e4;
+  font-size: 55px;
+}
+#about #about-text h1 #colors {
+  color: #0077ff;
+}/*# sourceMappingURL=sass.css.map */

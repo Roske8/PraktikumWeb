@@ -1,0 +1,138 @@
+//Promenljive
+$MC: #1d1d1f;
+$BC: #0077ff;
+$HO: #e4e4e4;
+//Mixin-s
+@mixin flexing{
+    display: flex;
+    justify-content: space-between;
+}
+@mixin wrappers{
+    width: 80%;
+    margin: 0px auto;
+}
+@font-face {
+    font-family: Roboto;
+    src: url("../font/RobotoSlab-VariableFont_wght.ttf");
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Roboto;
+    background-color: #1d1d1f;
+
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#nav-header{
+    background-color: $MC;
+    padding: 10px 0px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid $HO;
+    #header{
+        @include wrappers();
+        @include flexing();
+
+        img{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        ul{
+            list-style-type: none;
+            li{
+                color: $HO;
+                display: inline;
+                line-height: 80px;
+                font-size: 23px;
+                margin-left: 20px;
+                cursor: pointer;
+
+                a{
+                    text-decoration: none;
+                    color: $HO;
+                    &:hover{
+                        color: $BC;
+                    }
+                }
+            }
+        }
+    }
+}
+#home{
+    height: 85vh;
+    background-image: url("../images/cover5.jpg");
+    background-position: left;
+    background-size: cover;
+    @include flexing();
+    #transparent{
+        width: 100%;
+        height: inherit;
+        background: rgba(0, 0, 0, 0.2);
+        #test{
+            @include wrappers();
+            padding-top: 15%;
+
+            h2{
+                color: $HO;
+                font-size: 40px;
+
+            }
+            h1{
+                color: $HO;
+                font-size: 55px;
+                #colors{
+                    color: $BC;
+                }
+            }
+
+            ul{
+                margin-top: 20px;
+                list-style-type: none;
+                li{
+                    margin-right: 30px;
+                    display: inline;
+                    a{
+                        font-size: 30px;
+                        color: $BC;
+                        text-decoration: none;
+                        &:hover{
+                            color: $HO;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#about{
+    @include flexing();
+    @include wrappers();
+    margin-top: 20px;
+    #author{
+        img{
+            width: 400px;
+            border-radius: 50%;
+        }
+    }
+    #about-text{
+        h2{
+            color: $HO;
+            font-size: 40px;
+
+        }
+        h1{
+            color: $HO;
+            font-size: 55px;
+            #colors{
+                color: $BC;
+            }
+        }
+    }
+}
