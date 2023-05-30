@@ -57,6 +57,12 @@
         flex-direction: column;
         text-align: center;
     }
+    #wrap #footer p{
+        font-size: 15px;
+    }
+    #wrap #footer div a{
+        font-size: 22px;
+    }
 }
 
 @media screen and (max-width: 426px){
